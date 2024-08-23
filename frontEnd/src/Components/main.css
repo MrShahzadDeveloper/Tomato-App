@@ -1,0 +1,417 @@
+.sign-up {
+    border: 1px solid tomato;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sign-up:hover {
+    background-color: tomato;
+    color: white;
+}
+
+.active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid tomato;
+    color: tomato;
+}
+
+.dot {
+    position: absolute;
+    min-width: 12px;
+    min-height: 12px;
+    border-radius: 50px;
+    top: -8px;
+    right: -8px;
+    background-color: tomato;
+}
+
+.header {
+    background: url("/header_img.png");
+    height: 38vw;
+}
+
+.header-content {
+    gap: 1.5vw;
+    max-width: 55%;
+    bottom: 20%;
+    left: 6vw;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.header-content h2 {
+    font-size: max(4vw, 22px);
+}
+
+.header-content p {
+    font-size: 1vw;
+
+}
+
+.header-content button {
+    padding: 1vw 2.3vw;
+    font-size: max(1vw, 13px);
+    transition: 0.3s;
+}
+
+.header-content button:hover {
+    color: white;
+    background-color: tomato;
+}
+
+explore-menu-text {
+    max-width: 60%;
+    color: #808080;
+}
+
+
+
+.explore-menu-list-item img {
+    width: 7.5vw;
+    min-width: 80px;
+    border-radius: 50%;
+    /* Circular image */
+}
+
+.explore-menu-list-item p {
+    font-size: max(1vw, 16px);
+    /* Responsive font size, minimum 16px */
+}
+
+.explore-menu-list-item .active {
+    border: 4px solid tomato;
+    /* Tomato-colored border around the active item */
+    padding: 2px;
+    /* Padding inside the border */
+    border-radius: 50%;
+    /* Ensures the border remains circular */
+}
+
+.explore-menu-list-item .active img {
+    width: 5.5vw;
+    /* Smaller size when active */
+    min-width: 60px;
+    /* Smaller minimum size when active */
+    border-radius: 50%;
+    /* Maintain circular shape */
+}
+
+.food-display {
+    font-size: max(2vw, 24px);
+    /* This should work well */
+}
+
+
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    /* Corrected autofill to auto-fill */
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.food-item {
+    box-shadow: 0px 0px 10px #00000015;
+    transition: all 0.3s ease;
+    animation: fadeInItems 0.7s ease-in-out;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.food-item-img {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.footer {
+    padding: 20px 8vw;
+}
+
+.footer-content {
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.center ul li,
+/* Targets <li> elements inside .center */
+.right ul li {
+    /* Targets <li> elements inside .right */
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.app-download {
+    font-size: max(3vw, 20px);
+}
+
+.platforms {
+    gap: max(2vw, 10px);
+}
+
+.platforms img {
+    width: max(30vw, 120px);
+    max-width: 180px;
+    transition: 0.5s;
+
+}
+
+.platforms img:hover {
+    transform: scale(1.1);
+
+}
+
+.login-popup {
+    background-color: #00000090;
+    z-index: 1;
+}
+
+.login-container {
+    width: max(23vw, 330px);
+    animation: popDown 0.5s ease-out;
+}
+
+.login-input input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.log-btn {
+    background-color: tomato;
+}
+
+/* styles.css */
+/* styles.css */
+.checkbox-custom {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d1d5db;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded corners */
+    background-color: white;
+    /* Default background */
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    /* Smooth background and border transition */
+}
+
+.checkbox-custom:checked {
+    background-color: tomato;
+    /* Tomato background when checked */
+    border-color: tomato;
+    /* Change border to tomato when checked */
+}
+
+.checkbox-custom:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    /* Smaller checkmark size */
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: checkmark 0.3s ease-in-out;
+    /* Apply animation */
+}
+
+.cart-title {
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    font-size: max(1vw, 12px);
+}
+
+.cart-bottom {
+    gap: max(12vw, 20px);
+}
+
+.cart-bottom h2 {
+    color: tomato;
+}
+
+.cart-btn {
+    color: white;
+    background-color: tomato;
+    width: max(15px, 200px);
+    padding: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.promo-input {
+    background-color: #eaeaea;
+    border-radius: 8px;
+}
+
+.submit-btn {
+    width: max(10vw, 150px);
+    border-radius: 8px;
+}
+
+.order-left {
+    max-width: max(30%, 500px);
+}
+
+.order-left input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline: tomato;
+}
+
+.order-left input:focus {
+    border-color: tomato;
+    /* Change border color when focused */
+    outline: 2px solid tomato;
+    /* Custom outline color when focused */
+
+    border: none;
+}
+
+.order-left .multi-fields {
+
+    display: flex;
+    gap: 10px;
+}
+
+.order-right {
+    width: 40%;
+    max-width: max(40% 50px);
+}
+
+
+/* --------------------------------(Media Quries)------------------------- */
+/* Tailwind custom scrollbar for small screens */
+@media (max-width: 700px) {
+    .food-display-list {
+        max-height: 200px;
+        /* Adjust the height as per your needs */
+        overflow-y: auto;
+    }
+
+    .food-display-list::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .food-display-list::-webkit-scrollbar-track {
+        background: white;
+    }
+
+    .food-display-list::-webkit-scrollbar-thumb {
+        background-color: tomato;
+        border-radius: 10px;
+    }
+
+    .food-display-list {
+        scrollbar-width: thin;
+        scrollbar-color: tomato white;
+    }
+}
+
+
+.explore-menu-list {
+    overflow-x: scroll;
+    scrollbar-color: tomato transparent;
+    /* Custom scrollbar color for Firefox */
+    scrollbar-width: thin;
+    /* Thin scrollbar for Firefox */
+}
+
+/* Webkit-based browsers (Chrome, Safari, Edge) */
+.explore-menu-list::-webkit-scrollbar {
+    height: 8px;
+    /* Scrollbar height */
+}
+
+.explore-menu-list::-webkit-scrollbar-track {
+    background: transparent;
+    /* Track background */
+}
+
+.explore-menu-list::-webkit-scrollbar-thumb {
+    background-color: tomato;
+    /* Scrollbar color */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: 2px solid transparent;
+    /* Border around scrollbar */
+}
+
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        left: 0;
+        /* Start at the original position */
+    }
+
+    100% {
+        opacity: 1;
+        left: 100;
+        /* Slide 100px to the right */
+    }
+}
+
+@keyframes fadeInItems {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+        /* Increased slide-up distance for a more noticeable effect */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-container {
+    width: max(23vw, 330px);
+    animation: popDown 0.5s ease-out;
+}
+
+@keyframes popDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+        /* Start from 50px above */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* End at the original position */
+    }
+}
+
+/* Animation for the checkmark */
+@keyframes checkmark {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(0deg) scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(45deg) scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(45deg) scale(1);
+    }
+}
